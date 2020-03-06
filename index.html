@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Linked List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="controller">
+        <div>
+            <input type="text" id="data" placeholder="insert any data here">
+            <button onclick="addAsFirst()">Add As First</button>
+            <button onclick="addAsLast()">Add As Last</button>
+            <button onclick="list.deleteFirst(); showAllAsc();">Remove First</button>
+            <button onclick="list.deleteLast(); showAllAsc();">Remove Last</button>
+            <button onclick="showAllAsc()">Show All</button>
+            <button onclick="showAllDesc()">Show All Reversed</button>
+            <button onclick="list.clear(); showAllAsc()">Clear</button>
+        </div>
+        <p>Use both data field and index field to insert data by index</p>
+        <div>
+            <input type="text" id="index" placeholder="insert a defined index here">
+            <button onclick="addByIndex()">Add By Index</button>
+            <button onclick="removeByIndex()">Remove By Index</button>
+            <button onclick="searchByIndex()">Search By Index</button>
+        </div>    
+    </div>
+
+    <table id="table">
+        <tr>
+            <th>Index</th>
+            <th>Data</th>
+        </tr>
+    </table>
+
+<script src="script.js"></script>
+</body>
+
+</html>

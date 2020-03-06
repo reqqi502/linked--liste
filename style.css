@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+}
+
+.controller {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.controller div {
+    display: flex;
+    border: 1px solid #AAA;
+    padding: 6px;
+    margin: 10px;
+    width: 60%;
+    justify-content: center;
+}
+
+.controller div input {
+    padding: 10px;
+}
+
+.controller div button {
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: violet;
+}
+
+.controller div button:hover {
+    background-color: orange;
+}
+
+#table,
+td,
+th {
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+#table {
+    border-collapse: collapse;
+    width: 60%;
+    margin: 5px auto;
+}
+
+#table th,
+#table td {
+    padding: 15px;
+}
